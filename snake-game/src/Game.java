@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
 
 public class Game extends JPanel implements Runnable, KeyListener {
 
@@ -15,6 +16,8 @@ public class Game extends JPanel implements Runnable, KeyListener {
 
     private Thread thread;
     private boolean running;
+    private BodyPart b;
+    private ArrayList<BodyPart> snake;
 
     public Game() {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
