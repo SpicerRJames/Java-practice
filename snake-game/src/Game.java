@@ -53,7 +53,7 @@ public class Game extends JPanel implements Runnable, KeyListener {
             g.drawLine(i * 10, 0, i * 10, WIDTH);
         }
         for(int i = 0; i < snake.size(); i++){
-            
+            snake.get(i).draw(g);
         }
     }
 
