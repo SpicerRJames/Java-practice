@@ -29,4 +29,10 @@ public class BodyPart {
     public void setxCoor(int xCoor) {
         this.xCoor = xCoor;
     }
+    public int getyCoor() {
+        return yCoor;
+    }
+    public void setyCoor(int yCoor) {
+        this.yCoor = yCoor;
+    }
 }
