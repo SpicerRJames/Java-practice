@@ -36,7 +36,16 @@ public class Game extends JPanel implements Runnable, KeyListener {
     }
 
     public void tick() {
-
+        if (snake.size() == 0) {
+            b = new BodyPart(xCoor, yCoor, 10);
+            snake.add(b);
+        }
+        if(apples.size() == 0) {
+            int xCoor = r.nextInt(39);
+            int yCoor = r.nextInt(39);
+            
+            apple = new Apple(xCoor, yCoor, 10);
+            apples.add(apple);
     }
 
     public void paint(Graphics g) {
