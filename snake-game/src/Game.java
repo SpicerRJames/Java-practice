@@ -19,7 +19,11 @@ public class Game extends JPanel implements Runnable, KeyListener {
     private BodyPart b;
     private ArrayList<BodyPart> snake;
 
+    private Random r;
+
     private int xCoor = 10, yCoor = 10, size = 5;
+
+    private int ticks = 0;
 
     public Game() {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
