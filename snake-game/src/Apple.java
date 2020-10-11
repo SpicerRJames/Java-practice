@@ -20,4 +20,11 @@ public class Apple {
         g.fillRect(xCoor * width , yCoor * height, width, height);
     }
     
+    public int getxCoor() {
+        return xCoor;
+    }
+    public void setxCoor(int xCoor) {
+        this.xCoor = xCoor;
+    }
+
 }
