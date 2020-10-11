@@ -1,3 +1,6 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class Apple {
     private int xCoor, yCoor, width, height;
     
@@ -7,6 +10,11 @@ public class Apple {
         width = tileSize;
         height = tileSize;
     }
+
+    public void tick() {
+        
+    }
+
     public void draw(Graphics g) {
         g.setColor(Color.RED);
         g.fillRect(xCoor * width , yCoor * height, width, height);
