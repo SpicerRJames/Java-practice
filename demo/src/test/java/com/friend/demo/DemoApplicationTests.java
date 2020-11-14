@@ -1,4 +1,4 @@
-package com.friendlist.friend;
+package com.friend.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

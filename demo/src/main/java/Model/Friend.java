@@ -1,4 +1,4 @@
-package main.java.Model;
+package Model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -56,3 +56,4 @@ public class Friend {
         this.email = email;
     }
 }
+
