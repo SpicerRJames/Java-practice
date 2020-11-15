@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div align="center">
+        <h1>Friend List</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Friend Firest Name</th>
+                        <th>Friend Last Name</th>
+                        <th>Friend Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="friend : ${listFriends}">
+                         <td th:text="${friend.firstName}"></td>
+                         <td th:text="${friend.lastNmae}"></td>
+                         <td th:text="${friend.email}"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+    </div>
 </body>
 </html>
