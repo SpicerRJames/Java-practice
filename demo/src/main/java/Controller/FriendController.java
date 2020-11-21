@@ -20,6 +20,12 @@ public class FriendController {
         return "index";
     }
 
-   
+    @GetMapping("/showNewFriendForm")
+    public String showNewFriendForm(Model model) {
+        Friend friend = new Friend();
+        model.addAttribute("friend", friend);
+        return "new_friend";
+    }
+
 
 }
