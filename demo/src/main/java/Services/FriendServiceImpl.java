@@ -36,5 +36,11 @@ public class FriendServiceImpl implements FriendService{
         }
         return friend;
     }
+
+    @Override
+    public void deleteFriendById(long id) {
+        // TODO Auto-generated method stub
+
+    }
     
 }
