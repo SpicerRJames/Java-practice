@@ -35,6 +35,6 @@ public class FriendController {
         friendService.saveFriend(friend);
         return "redirect:/";
     }
-
+//test
 
 }
