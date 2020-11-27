@@ -17,5 +17,10 @@ public class FriendServiceImpl implements FriendService{
     @Override
     public List<Friend> getAllFriends() {
         return friendRepo.findAll();
+
+    @Override
+    public void saveFriend(Friend friend) {
+        this.friendRepo.save(friend);
+    }
     }
 }
