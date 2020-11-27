@@ -29,8 +29,8 @@ public class FriendController {
         return "new_friend";
     }
 
-    @PostMapping("/saveEmployee")
-    public String saveEmployee(@ModelAttribute("employee") Friend friend) {
+    @PostMapping("/saveFriend")
+    public String saveFriend(@ModelAttribute("friend") Friend friend) {
         // save employee to database
         friendService.saveFriend(friend);
         return "redirect:/";
